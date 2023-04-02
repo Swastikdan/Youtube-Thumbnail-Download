@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Download youtube thumbnail Images and vimeo videos of all quality. This app lets you to download HD thumbnail images for free. Just enter the URL of the video for which thumbnail needs to be saved.">
+
+<title>
+        Youtube thumbnail Image View and Download
+</title>
+<link rel="icon" type="image/svg+xml" href="https://flowrift.com/img/favicon.svg" />
+</head>
+<body class="text-center pt-10  dark:bg-gray-800 dark:text-white">
+
+    <section class="px-10">
+
+    <header class="flex flex-col md:flex-row space-y-5 md:space-y-1 items-center justify-between py-2 md:py-8  bg-gray-200 dark:bg-gray-900 px-5  rounded-md  ">
+        <!-- logo - start -->
+        <a href="/" class=" dark:text-gray-300" aria-label="logo">
+          <h1 class="text-2xl sm:text-3xl md:text-4xl xl:text-5xl font-semibold md:font-bold">Download Youtube Thumbnail</h1>
+        </a>
+        <!-- logo - end -->
+        <!-- buttons - start -->
+<div class="text-gray-500 dark:text-gray-400  flex flex-col items-center px-10">
+   
+              <button id="theme-toggle" type="button" class="text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700  rounded-md text-sm p-2.5 ">
+                <svg id="theme-toggle-dark-icon" class="hidden w-8 h-8" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path></svg>
+                <svg id="theme-toggle-light-icon" class="hidden w-8 h-8" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" fill-rule="evenodd" clip-rule="evenodd"></path></svg>
+             </button> <span>Dark Mode</span></div>
+  
+      
+
+            <!-- buttons - end -->
+          </header>
+
+      
+
+        <div class="flex space-x-5 items-center justify-between">
+            
+        </div>
+        <br>
+        
+        <p class="text-md pt-10 md:text-xl  items-center text-center ">Download youtube and vimeo thumbnail images of all quality for free.  This application let you download thumbnails of all quality. Just paste  the URL of the thumbnail video in the below input and click Get  Thumbnail Image</p>
+        
+        <div class="container mx-auto py-8  items-center ">
+          
+            <div class="mb-4 flex flex-wrap justify-center ">
+                <label for="videoLink" class="sr-only">Enter YouTube video link</label>
+                <input type="text" id="videoLink" class="w-full rounded-lg border-2 text-xl  border-gray-300 px-4 py-2 shadow-sm focus:border-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-500 md:w-1/2" placeholder="Enter YouTube video link" />
+                <button id="submitBtn" class="mt-4 inline-block  items-center rounded-md bg-blue-600 px-7 py-2 text-md md:text-xl  text-white hover:bg-blue-500 space-x-3 duration-300 shadow-xl md:ml-4 md:mt-0">Get Thumbnails</button>
+              </div>
+      
+            <div id="thumbnails" class="flex flex-col space-y-10 ">
+        
+          </div>
+        </section>
+          <footer class="text-gray-600 body-font mt-[10rem] py-5 bg-gray-100 dark:bg-gray-900 ">
+            <div class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
+
+              <p class="text-xl text-gray-500 sm:ml-4 sm:pl-4 sm:py-2 sm:mt-0 mt-4">Made with 💕 by  
+                <a href="https://www.linkedin.com/in/swastikdan" class="text-gray-600 ml-1" rel="noopener noreferrer" target="_blank">Swastik Dan .</a>
+              </p>
+              <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
+                <div class="flex justify-center mt-8 space-x-6"><a target="_blank" rel="noopener noreferrer"
+                    href="https://www.facebook.com/SwastikDan" class="text-gray-400 hover:text-gray-500"><span
+                        class="sr-only">Facebook</span><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+                        fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                        <path
+                            d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z">
+                        </path>
+                    </svg></a><a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/swastikdan"
+                    class="text-gray-400 hover:text-gray-500"><span class="sr-only">linkedin</span><svg
+                        xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+                        class="bi bi-linkedin" viewBox="0 0 16 16">
+                        <path
+                            d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z">
+                        </path>
+                    </svg></a><a target="_blank" rel="noopener noreferrer" href="https://github.com/Swastikdan"
+                    class="text-gray-400 hover:text-gray-500"><span class="sr-only">GitHub</span><svg
+                        xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+                        class="bi bi-github" viewBox="0 0 16 16">
+                        <path
+                            d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z">
+                        </path>
+                    </svg></a>
+                    <a target="_blank" rel="noopener noreferrer" href="https://www.swastikdan.tech/"
+                    class="text-gray-400 hover:text-gray-500"><span class="sr-only">Website</span><img width="30" src="https://res.cloudinary.com/dubqnzagc/image/fetch/f_auto,q_auto/https://main--swastikdan.netlify.app/assets/logo-header.webp" alt="" srcset=""></a>
+                </div>
+
+              </span>
+            </div>
+          </footer>
+        <script type="module" src="./mian.js"></script>
+    <script>
+        // On page load or when changing themes, best to add inline in `head` to avoid FOUC
+        if (localStorage.getItem('color-theme') === 'dark' || (!('color-theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+            document.documentElement.classList.add('dark');
+        } else {
+            document.documentElement.classList.remove('dark')
+        }
+    </script>
+    <!-- <script src="./darkmode.js"></script> -->
+</body>
+</html>

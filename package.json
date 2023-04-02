@@ -1,0 +1,29 @@
+{
+  "devDependencies": {
+    "autoprefixer": "^10.4.14",
+    "postcss": "^8.4.21",
+    "tailwindcss": "^3.3.1"
+  },
+  "dependencies": {
+    "vite": "^4.2.1"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build"
+  },
+  "name": "youtube-thumbnail-download-",
+  "description": "Download youtube thumbnail Images and vimeo videos of all quality. This app lets you to download HD thumbnail images for free. Just enter the URL of the video for which thumbnail needs to be saved.",
+  "version": "1.0.0",
+  "main": "darkmode.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Swastikdan/Youtube-Thumbnail-Download-.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Swastikdan/Youtube-Thumbnail-Download-/issues"
+  },
+  "homepage": "https://github.com/Swastikdan/Youtube-Thumbnail-Download-#readme"
+}
